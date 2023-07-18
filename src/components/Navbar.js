@@ -94,7 +94,7 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                href="https://haoo.tech/"
+                href="https://haozheng.ca/"
                 target="_blank"
                 rel="noreferrer"
               >
