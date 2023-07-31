@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="https://haoo.tech/" target="_blank">Haoo.tech</a>
+  <a href="https://haozheng.ca/" target="_blank">Hao Zheng</a>
 </h2>
 <div align="center" style="max-width: 300px;">
   <img alt="Demo" src="./Images/readme-img2.png" style="width:100%;"/>
