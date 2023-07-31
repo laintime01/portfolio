@@ -258,11 +258,13 @@ button:focus {
   position: relative;
   z-index: -1;
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
-  background-position: bottom right;
+  background-position: bottom right, left; /* 新增left属性 */
   background-repeat: no-repeat;
+  background-size: 100% auto; /* 新增这行 */
   padding-bottom: 30px !important;
   padding-top: 30px !important;
 }
+
 
 .home-content {
   padding: 9rem 0 2rem !important;
