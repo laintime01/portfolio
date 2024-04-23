@@ -2,9 +2,10 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import editor from "../../Assets/Projects/codeEditor.png";
-import pkams from "../../Assets/Projects/pkams.png"
-import infoweb from "../../Assets/Projects/infoweb.png"
+import pkams from "../../Assets/Projects/pkams.png";
+import infoweb from "../../Assets/Projects/infoweb.png";
+import newinca from "../../Assets/Projects/newinca.png";
+import loyeco from "../../Assets/Projects/loyeco.png";
 
 function Projects() {
   return (
@@ -18,6 +19,24 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={newinca}
+              isBlog={false}
+              title="Newcomer Navigator"
+              description="Newcomers Canada Navigator is an all-encompassing website designed to provide comprehensive guidance and information to newcomers in Canada."
+              demoLink="http://3.17.140.37/en/index.html"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={loyeco}
+              isBlog={false}
+              title="Loyeco system"
+              description="A comprehensive practice management system designed specifically for wellness practitioners including massage therapists and acupuncturists."
+              demoLink="http://loyeco.com:12121/"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={pkams}
@@ -29,22 +48,14 @@ function Projects() {
             />
           </Col>
 
+        </Row>
+        <Row>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={infoweb}
               isBlog={false}
               title="Internal Information Platform"
-              description="An internal information platform for college teachers and students. The platform provides a variety of functions such as information release, information search, and information management."
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Newcomer Navigator"
-              description="Newcomers Canada Navigator is an all-encompassing website designed to provide comprehensive guidance and information to newcomers in Canada. It serves as a one-stop resource hub, offering essential details and resources on housing, transportation, education, food, and other essential services. "
-              ghLink="https://github.com/laintime01"
+              description="An internal information platform for college teachers and students. "
             />
           </Col>
         </Row>
