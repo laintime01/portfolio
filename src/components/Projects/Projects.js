@@ -6,6 +6,7 @@ import pkams from "../../Assets/Projects/pkams.png";
 import infoweb from "../../Assets/Projects/infoweb.png";
 import newinca from "../../Assets/Projects/newinca.png";
 import loyeco from "../../Assets/Projects/loyeco.png";
+import yunliu from "../../Assets/Projects/yunliu.png";
 
 function Projects() {
   return (
@@ -39,15 +40,13 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={pkams}
+              imgPath={yunliu}
               isBlog={false}
-              title="PKAM System"
-              description="The project knowledge achievement management system is a platform that helps users track and manage their knowledge and achievements related to project management in a concise and efficient manner."
-              ghLink="https://github.com/laintime01/dms-front"
-              demoLink="http://47.100.91.158:12121/"
+              title="Yunliu's Personal Campaign Website"
+              description="Yunliu's personal campaign website for nomination candidate of Conservative Party of Canada Aurora-Oak Ridges-Richmond Hill."
+              demoLink="http://yunliu.ca/"
             />
           </Col>
-
         </Row>
         <Row>
           <Col md={4} className="project-card">
@@ -56,6 +55,14 @@ function Projects() {
               isBlog={false}
               title="Internal Information Platform"
               description="An internal information platform for college teachers and students. "
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={pkams}
+              isBlog={false}
+              title="PKAM System"
+              description="The project knowledge achievement management system is a platform that helps users track and manage their knowledge and achievements related to project management in a concise and efficient manner."
             />
           </Col>
         </Row>
