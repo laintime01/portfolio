@@ -26,7 +26,7 @@ function Projects() {
               isBlog={false}
               title="Newcomer Navigator"
               description="Newcomers Canada Navigator is an all-encompassing website designed to provide comprehensive guidance and information to newcomers in Canada."
-              demoLink="http://3.17.140.37/en/index.html"
+              demoLink="http://newinca.com/en/index.html"
             />
           </Col>
           <Col md={4} className="project-card">
