@@ -4,6 +4,7 @@
 import { motion } from "framer-motion"
 import { Card, CardContent } from "@/components/ui/card"
 import { Github, ExternalLink } from "lucide-react"
+import Image from 'next/image' // 添加 Image 组件
 
 interface Project {
   title: string
@@ -16,28 +17,29 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: "Nuclear Research Achievement Management System",
-    description: "A comprehensive management system for Tsinghua University's Nuclear Research Institute, facilitating the tracking and management of research achievements.",
-    technologies: ["Vue.js", "Spring Boot", "MySQL", "Element UI"],
-    image: "/images/project1.png", // 需要添加项目图片
+    title: "Newinca - Immigrant Information Platform",
+    description: "A comprehensive information platform for new immigrants, offering classified information about housing, jobs, education, and daily life services.",
+    technologies: ["React.js", "MySQL", "Element UI"],
+    image: "/images/newinca.png",
+    link: "https://www.newinca.com"
   },
   {
-    title: "ESS-Mobile Laboratory Monitoring",
-    description: "iOS mobile application for environmental laboratory monitoring, providing real-time data tracking and alerts.",
-    technologies: ["Flutter", "Dart", "iOS", "RESTful APIs"],
-    image: "/images/project2.png",
+    title: "University Information Portal",
+    description: "Internal information management system for university staff and students, providing course schedules, campus news, and administrative services.",
+    technologies: ["Vue.js", "Node.js", "MongoDB", "Ant Design"],
+    image: "/images/infoweb.png",
   },
   {
     title: "Yunliu Campaign Website",
     description: "Personal campaign website built with React, featuring modern design and interactive elements.",
     technologies: ["React", "Next.js", "Tailwind CSS", "Framer Motion"],
-    image: "/images/project3.png",
+    image: "/images/yunliu.png",
   },
   {
     title: "Toronto Clinic Appointment System",
     description: "Full-stack appointment management system for a Toronto-based clinic, streamlining patient scheduling.",
     technologies: ["React", "Spring Boot", "PostgreSQL", "JWT"],
-    image: "/images/project4.png",
+    image: "/images/loyeco.png",
   }
 ]
 
@@ -60,7 +62,15 @@ export default function Works() {
             >
               <Card className="overflow-hidden group">
                 <CardContent className="p-6">
-                  <div className="aspect-video mb-4 bg-gray-100 dark:bg-gray-800 rounded-lg"></div>
+                  {/* 替换 div 为 Image 组件 */}
+                  <div className="relative aspect-video mb-4 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt={project.title}
+                      fill
+                      className="object-cover hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
                   <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-500 transition-colors">
                     {project.title}
                   </h3>
