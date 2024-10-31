@@ -13,12 +13,12 @@ export default function AnimatedContent() {
     
     setIsDownloading(true);
     try {
-      const response = await fetch('/assets/ryan-zheng-cv.pdf');
+      const response = await fetch('/assets/RYAN_ZHENG_IT.pdf');
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
-      a.download = 'Ryan_zheng.pdf';
+      a.download = 'RYAN_ZHENG_IT.pdf';
       document.body.appendChild(a);
       a.click();
       window.URL.revokeObjectURL(url);
