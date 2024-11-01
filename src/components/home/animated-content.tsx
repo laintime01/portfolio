@@ -13,7 +13,9 @@ export default function AnimatedContent() {
     
     setIsDownloading(true);
     try {
-      const response = await fetch('/assets/RYAN_ZHENG_IT.pdf');
+      const response = await fetch('/assets/RYAN_ZHENG_IT.pdf', {
+        cache: 'no-store' // 防止缓存问题
+      });      
       const blob = await response.blob();
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
